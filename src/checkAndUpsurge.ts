@@ -52,7 +52,7 @@ import { exponentialBackoff, sleep } from './libs/Utils'
       const gas = await upsurgeTxn.estimateGas()
       return await upsurgeTxn.send({
         from: accountToSendTxn,
-        gas: new BigNumber(gas).times(3).div(2).toNumber(),
+        gas: new BigNumber(gas).times(1).toNumber(),
       })
     })
 
